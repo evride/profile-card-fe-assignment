@@ -1,0 +1,19 @@
+<div class="card" itemscope itemtype="https://schema.org/Person">
+	<div class="card-inner">
+		<div class="thumbnail-container">
+			<img src="${window._getThumbnailURL(state.profile.thumbnail)}" title="${state.profile.icaName} - ${state.profile.title}" alt="${state.profile.icaName}" itemprop="photo">
+		</div>
+		<h2 itemprop="name">${state.profile.icaName}</h2>
+		<h3 itemprop="title">${state.profile.title}</h3>
+		<p class="bio">${state.profile.bioShort}</p>
+		<div class="info">
+			<span>${state.profile.linkedInSkill},</span>
+			<label>Skill</label>
+		</div>
+		<div class="info">
+			<span itemprop="organizational-unit">${state.profile.teamName},</span>
+			<label>Team</label>
+		</div>
+		<a class="contact btn" href="mailto:${state.profile.email}" alt="${state.profile.email}">Contact</a>
+	</div>
+</div>
