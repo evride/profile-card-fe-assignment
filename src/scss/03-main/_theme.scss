@@ -1,0 +1,22 @@
+
+h2 {
+	font-family: $gloriola-bold;
+	margin: 0.25rem 0;
+}
+h3 {
+	font-family: $gloriola-med;
+	color: #aaa;
+	margin: 0.25rem 0;
+}
+h4 {
+	
+}
+
+button, .btn {
+	border-radius: 0.5rem;
+	border: 0.1rem solid $primary-blue;
+	color: $primary-blue;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	background: white;
+}

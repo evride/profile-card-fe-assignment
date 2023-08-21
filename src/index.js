@@ -1,4 +1,7 @@
 const css = require('./scss/main.scss');
+import jsonPathReq from './static/data/cards-data.json';
+import App from './app';
+
 
 
 /**
@@ -22,3 +25,6 @@ const createImageFinderMethod = ()=> {
 }
 
 window._getThumbnailURL = createImageFinderMethod();
+
+
+const app = new App(document.getElementById('app'), jsonPathReq);

@@ -1,0 +1,20 @@
+body {
+	background: $light-gray;
+	font-family: $gloriola-reg;
+}
+
+
+.container {
+	width: 1440px;
+	margin: 0 auto;
+
+	nav {
+		background: $vibrant-blue;
+		height: 40px;
+	}
+	.hero {
+		background: $dark-gray;
+		height: 400px;
+	}
+}
+

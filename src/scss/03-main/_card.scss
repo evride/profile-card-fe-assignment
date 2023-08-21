@@ -1,0 +1,61 @@
+
+.card {
+	background: #fff;
+	border-radius: 1rem;
+	padding: 1rem;
+	width: 25%;
+	flex: 0 1 25%;
+	margin: 0.5rem;
+	box-sizing:border-box;
+	position: relative;
+	box-shadow: 0 4px 4px rgba(0,0,0,0.15);
+
+	.card-inner {
+		position:relative;
+		display: flex;
+    	flex-flow: column;
+
+    	.btn {
+    		justify-self: flex-end;
+    		align-self: flex-end;
+    	}
+	}
+
+	.thumbnail-container {
+		height: 10rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: block;
+			background-color: $teal;
+			height: 50%;
+			width: 100%;
+			position: absolute;
+			border-radius: 0.25rem;
+		}
+		img {
+			width: 8rem;
+			height: 8rem;
+			border-radius: 50%;
+			border: 0.25rem solid #fff;
+			position: absolute;
+			object-fit: cover;
+    		object-position: top center;
+    		margin: 1rem;
+		}
+	}
+
+	.fullname {
+
+	}
+	.bio {
+		color: $primary-blue;
+	}
+}
+.card-container {
+	display: flex;
+	flex-flow: row wrap;
+	background: $medium-gray;
+	padding: 0.5rem;
+}
