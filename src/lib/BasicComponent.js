@@ -1,6 +1,8 @@
 export default class BasicComponent {
-	constructor(template) {
+	constructor(template, state) {
 		this.template = template;
+		this.state = state;
+		this.render();
 	}
 
 	render() {
@@ -10,8 +12,7 @@ export default class BasicComponent {
 	}
 
 	convertTemplate() {
-		const { state } = this;
-		return new Function('state', 'return `' + this.template + '`;')(state);
+		return new Function('state', 'return `' + this.template + '`;')(this.state);
 	}
 
 	get element() {
